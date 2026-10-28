@@ -11,6 +11,8 @@ El proyecto desarrolla un modelo computacional para predecir el impacto de la va
 * Cobertura temporal: 2007 a 2024 (18 anos agricolas continuos, mas 2006 para rezagos t-1 observados) [VERIFICADO: clima_anual_municipios_2007_2024.csv].
 * Unidad de analisis: Municipio-Cultivo-Ano [VERIFICADO: dataset_maestro_andina_caribe.csv].
 * Audiencia: Semillero de investigacion y comunidad academica agroclimatica [VERIFICADO: ESTADO_DEL_ARTE.md].
+* Repositorio GitHub: `https://github.com/ke1npro/AgroENSO` [VERIFICADO: gh repo].
+* Despliegue GitHub Pages: `https://ke1npro.github.io/AgroENSO/` [VERIFICADO: HTTP 200 en produccion].
 * Revista candidata: Ingenieria y Competitividad (Universidad del Valle) [ORIGEN POR CONFIRMAR, no decidida].
 
 ## 3. Estado por Fase del Plan de Accion
