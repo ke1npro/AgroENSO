@@ -4,8 +4,26 @@
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.2+-ee4c2c.svg)](https://pytorch.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Hugging Face Datasets](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Datasets-orange)](https://huggingface.co/datasets/semillero-agro/colombia-agroclimatic-enso-eva)
+[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live%20Dashboard-brightgreen?logo=github)](dashboard_tecnico/index.html)
 
 Este repositorio contiene el código fuente, la suite experimental y las aplicaciones interactivas del proyecto de investigación enfocado en modelar la pérdida o ganancia de eficiencia agrícola municipal ante eventos extremos de **El Niño Oscilación del Sur (ENSO)** en Colombia.
+
+---
+
+## 🌐 Visualizadores Web en Vivo (GitHub Pages)
+
+El proyecto incluye dos interfaces analíticas estáticas optimizadas para ser servidas directamente desde **GitHub Pages**:
+
+- **📊 [Dashboard Técnico AgroENSO](dashboard_tecnico/index.html):** Explorador agroclimático interactivo, benchmarking LOEO de 4 baselines, curvas de aprendizaje por iteración, ablación ENSO y diagnóstico de calidad de telemetría IDEAM.
+- **⚡ [Laboratorio Experimental](Experimental/index.html):** Visor de resultados simplificado para iteraciones rápidas (Antioquia vs. Todas las Regiones vs. Red Modular FiLM).
+- **📦 [Mapa de Custodia Exclusivo](dashboard_tecnico/exclusivo.html):** Segregación técnica de gobernanza de datos (Git vs Hugging Face Datasets).
+
+### Cómo Activar GitHub Pages en el Repositorio:
+1. En GitHub, navegue a la pestaña **Settings > Pages**.
+2. En la sección **Build and deployment > Source**, seleccione **GitHub Actions** (recomendado; el workflow [`.github/workflows/deploy-pages.yml`](.github/workflows/deploy-pages.yml) desplegará automáticamente con cada `git push`).
+3. Alternativamente, puede seleccionar **Deploy from a branch**, eligiendo la rama `master` (o `main`) y la carpeta `/ (root)`. El archivo [`.nojekyll`](.nojekyll) y el redirector [`index.html`](index.html) en la raíz garantizan el funcionamiento inmediato.
+
+---
 
 ---
 

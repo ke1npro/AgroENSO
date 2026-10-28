@@ -1,4 +1,5 @@
 ruta_relativa,rol,proposito,filas,columnas,tamano_bytes,tamano_kb,sha256,fecha_modificacion
+.nojekyll,Otro,.nojekyll,,,0,0.0,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,2026-10-27 21:57:10
 dashboard_tecnico/css/dashboard.css,Web/Dashboard,Componente de Dashboard Técnico (dashboard.css),,,9472,9.25,99b5146671fe953f17a482a011c981da5e4e24659a267c56ce2de35af658481c,2026-10-14 21:36:15
 dashboard_tecnico/data/dashboard_data.js,Web/Dashboard,Componente de Dashboard Técnico (dashboard_data.js),,,273139,266.74,b21b8061762c77f5c324181141ba2b9b3c8372ba6ec8812656c09b5746578752,2026-10-27 21:40:18
 dashboard_tecnico/data/dashboard_data_caribe.js,Web/Dashboard,Componente de Dashboard Técnico (dashboard_data_caribe.js),,,288464,281.7,a6fff0a109cb97f4aa1a43cf8c65f9cc6acc1c80f2c852a58bc7d973fd8aef69,2026-10-27 21:40:50
@@ -39,14 +40,15 @@ Experimental/datos_experimentales.json,Otro,datos_experimentales.json,,,7336,7.1
 Experimental/ejecutar_experimentos.py,Script,Script de procesamiento / modelado (ejecutar_experimentos.py),,,23844,23.29,0dac73bc408e5cb23de3c5adc5a29b4f194e3699a9cead03d7d9873efff03bd6,2026-10-27 21:44:34
 Experimental/index.html,Otro,index.html,,,15208,14.85,dcdf47ce007dbbb8ea08db0374131c4150f22d3f28bfe8d4e1bd50f1e6db77f5,2026-10-27 21:50:26
 Experimental/resultados_simplificados.csv,Otro,resultados_simplificados.csv,6,21,1639,1.6,b8ee747dba21069c9f5ca407f48d317a7ecad868b7091bc867abe51389f5c639,2026-10-27 21:46:47
-HANDOFF.md,Documento,Documento de transferencia y estado de verdad del proyecto,,,29299,28.61,89c17b0282bb31c862048a83876f4feb93b78b6a4bdadc4e36b59e79bd950ba4,2026-10-09 21:41:12
+HANDOFF.md,Documento,Documento de transferencia y estado de verdad del proyecto,,,30401,29.69,f7f1b0b5cf1aae96a2602bee20181eeb1e80b806543efd12f7dcf0b87f820b01,2026-10-27 21:55:02
+index.html,Otro,index.html,,,3073,3.0,a2b082134210d99b0ad24b2a8c7d33b582a9b58e210fe5de5f5c8fcb1bbd4f7d,2026-10-27 21:57:23
 landing/assets/eva-data.js,Web/Landing,Componente de landing Tempero (eva-data.js),,,4194,4.1,a54db3fb88541cac92c437131f239645c02ff716d29f41c95db487fedd274999,2026-10-06 10:42:53
 landing/build_data.py,Script,Script de procesamiento / modelado (build_data.py),,,3115,3.04,5b35a31a4d4c773101cb4114ccefc34188a8bd4e9cb3b4292d27b02074f9f439,2026-10-06 10:42:50
 landing/index.html,Web/Landing,Componente de landing Tempero (index.html),,,30009,29.31,53df72a8c7d5bcd3d337d0db83a633b81ebbe5d62eff63d606e79a27fc0fe47d,2026-10-06 10:52:31
 landing/main.js,Web/Landing,Componente de landing Tempero (main.js),,,16080,15.7,c17f38d1759f45c9c653458bc542401cdc610625beb21ff79292a41bcc76ee8e,2026-10-06 10:50:34
 landing/styles.css,Web/Landing,Componente de landing Tempero (styles.css),,,33984,33.19,6d78244b6061c5f9d6675929eebc62c5305bbf6d1dc7d5cb3fb34b962d2199cf,2026-10-06 10:53:28
 PLAN_DE_ACCION.md,Documento,Plan metodológico y hoja de ruta consolidada de las 6 fases,,,17227,16.82,210aed04b04e4a3783656f65febacc62168aa3605566fbb6897e42763c1846a2,2026-10-06 17:15:15
-README.md,Otro,README.md,,,6817,6.66,59c68f0e549362bbc0e9dbc0a1461b8512c928395da9e17e063f253ce332e139,2026-10-27 21:53:24
+README.md,Otro,README.md,,,8319,8.12,0e6ec61ca8aeba2c62274b3b39ce63e77c34bebf6a5ecf382c1c9f05a90d1f0c,2026-10-27 21:57:49
 requirements.txt,Otro,requirements.txt,,,441,0.43,248a3c65d6e6a033971d1302e213b4770c48f9e0867feed87a08c89e69770e19,2026-10-27 21:49:28
 Resultados/baselines_curvas_aprendizaje.csv,Final,Curvas de convergencia por iteración en XGBoost,44,3,928,0.91,391ea37117606433b154b8722dc92c5727f893c04bd970728ab1b75f92796406,2026-10-08 12:28:00
 Resultados/baselines_curvas_aprendizaje_caribe.csv,Otro,baselines_curvas_aprendizaje_caribe.csv,44,3,929,0.91,6a454419fd87cbf318a9a9f3f94c166b9fd1d8cd68f61590ce27d5acf91e45da,2026-10-14 21:34:48

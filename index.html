@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="refresh" content="0; url=dashboard_tecnico/index.html">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AgroENSO · Redirigiendo al Dashboard Técnico...</title>
+  <style>
+    :root {
+      --bg: #0B0F17;
+      --card: #121824;
+      --border: #222F44;
+      --text: #F1F5F9;
+      --muted: #94A3B8;
+      --primary: #38BDF8;
+      --font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: var(--font);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+    .portal-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 36px 32px;
+      max-width: 520px;
+      width: 100%;
+      text-align: center;
+      box-shadow: 0 10px 40px -10px rgba(0, 0, 0, 0.5);
+    }
+    .tag {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      color: var(--primary);
+      background: rgba(56, 189, 248, 0.12);
+      border: 1px solid rgba(56, 189, 248, 0.25);
+      padding: 4px 10px;
+      border-radius: 999px;
+      margin-bottom: 14px;
+    }
+    h1 {
+      font-size: 22px;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 8px;
+    }
+    p {
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.5;
+      margin-bottom: 24px;
+    }
+    .links-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .btn-main {
+      display: block;
+      background: var(--primary);
+      color: #04101c;
+      font-weight: 600;
+      font-size: 14px;
+      padding: 12px 18px;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: opacity 0.2s;
+    }
+    .btn-main:hover { opacity: 0.9; }
+    .btn-sub {
+      display: block;
+      background: #182232;
+      color: var(--text);
+      font-weight: 500;
+      font-size: 13px;
+      padding: 10px 16px;
+      border-radius: 8px;
+      text-decoration: none;
+      border: 1px solid var(--border);
+      transition: background 0.2s;
+    }
+    .btn-sub:hover { background: #222f44; }
+  </style>
+  <script>
+    window.location.replace("dashboard_tecnico/index.html");
+  </script>
+</head>
+<body>
+  <div class="portal-card">
+    <span class="tag">GitHub Pages · Despliegue Oficial</span>
+    <h1>AgroENSO</h1>
+    <p>Redirigiendo al visor técnico interactivo y suite de modelos predictivos...</p>
+    <div class="links-grid">
+      <a href="dashboard_tecnico/index.html" class="btn-main">Entrar al Dashboard Técnico</a>
+      <a href="Experimental/index.html" class="btn-sub">⚡ Ver Laboratorio Experimental</a>
+      <a href="dashboard_tecnico/exclusivo.html" class="btn-sub">📦 Mapa de Custodia Git vs HF</a>
+    </div>
+  </div>
+</body>
+</html>
