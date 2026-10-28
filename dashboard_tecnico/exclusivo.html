@@ -1,0 +1,335 @@
+<!doctype html>
+<html lang="es-CO">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AgroENSO · Exclusivo: Mapa de Custodia Git & Hugging Face</title>
+  <meta name="description" content="Detalle de segregación y gobernanza de datos y código: qué vive exclusivamente en el repositorio Git y qué vive exclusivamente en Hugging Face Datasets.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap">
+
+  <link rel="stylesheet" href="css/dashboard.css">
+  <style>
+    .exclusivo-hero {
+      background: linear-gradient(135deg, rgba(56, 189, 248, 0.08) 0%, rgba(139, 92, 246, 0.08) 100%);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-lg);
+      padding: 32px;
+      margin-bottom: 28px;
+    }
+    .hero-badge {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+      background: rgba(56, 189, 248, 0.15);
+      color: var(--accent-blue);
+      border: 1px solid rgba(56, 189, 248, 0.3);
+      padding: 4px 10px;
+      border-radius: 999px;
+      margin-bottom: 12px;
+    }
+    .exclusivo-hero h2 {
+      font-size: 26px;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 8px;
+    }
+    .exclusivo-hero p {
+      color: var(--text-muted);
+      font-size: 14px;
+      max-width: 860px;
+      line-height: 1.6;
+    }
+
+    .split-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(460px, 1fr));
+      gap: 24px;
+      margin-bottom: 32px;
+    }
+    @media (max-width: 600px) {
+      .split-grid { grid-template-columns: 1fr; }
+    }
+
+    .vault-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-lg);
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+    }
+    .vault-card.git-vault {
+      border-top: 4px solid var(--accent-blue);
+    }
+    .vault-card.hf-vault {
+      border-top: 4px solid var(--accent-amber);
+    }
+
+    .vault-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 16px;
+    }
+    .vault-title {
+      font-size: 18px;
+      font-weight: 700;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .vault-pill {
+      font-size: 11px;
+      font-weight: 600;
+      padding: 3px 8px;
+      border-radius: 4px;
+      text-transform: uppercase;
+    }
+    .pill-git { background: rgba(56, 189, 248, 0.15); color: var(--accent-blue); }
+    .pill-hf { background: rgba(245, 158, 11, 0.15); color: var(--accent-amber); }
+
+    .vault-desc {
+      font-size: 13px;
+      color: var(--text-muted);
+      margin-bottom: 20px;
+      line-height: 1.5;
+    }
+
+    .vault-items {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .vault-item {
+      background: var(--bg-card-sub);
+      border: 1px solid rgba(255, 255, 255, 0.04);
+      border-radius: var(--radius-sm);
+      padding: 12px 14px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 12px;
+    }
+    .item-info .item-name {
+      font-family: var(--font-mono);
+      font-size: 13px;
+      font-weight: 600;
+      color: #fff;
+    }
+    .item-info .item-sub {
+      font-size: 12px;
+      color: var(--text-dim);
+      margin-top: 2px;
+    }
+    .item-badge {
+      font-size: 11px;
+      font-family: var(--font-mono);
+      padding: 2px 6px;
+      border-radius: 4px;
+      background: rgba(255, 255, 255, 0.06);
+      color: var(--text-muted);
+      white-space: nowrap;
+    }
+
+    .guide-box {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-lg);
+      padding: 24px;
+      margin-top: 28px;
+    }
+    .guide-box h3 {
+      font-size: 16px;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 12px;
+    }
+    .code-block {
+      background: #06090e;
+      border: 1px solid #1a2233;
+      border-radius: var(--radius-sm);
+      padding: 16px;
+      font-family: var(--font-mono);
+      font-size: 13px;
+      color: #38bdf8;
+      overflow-x: auto;
+      margin-top: 10px;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Barra superior técnica -->
+  <header class="topbar">
+    <div class="topbar__wrap">
+      <div class="topbar__brand">
+        <span class="badge-tag">Gobernanza de Datos & Repositorios</span>
+        <h1>AgroENSO <span class="sub">/ Mapa de Custodia Exclusivo</span></h1>
+      </div>
+      <div class="topbar__meta">
+        <a href="index.html" class="tab-btn" style="text-decoration:none; padding: 6px 14px;">
+          ← Dashboard Principal
+        </a>
+        <a href="../Experimental/index.html" class="tab-btn" style="text-decoration:none; padding: 6px 14px; background: rgba(168, 85, 247, 0.15); border-color: rgba(168, 85, 247, 0.4); color: #c084fc;">
+          ⚡ Lab Experimental
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="main-content" style="max-width: 1440px; margin: 0 auto; padding: 24px;">
+
+    <!-- Banner Hero -->
+    <div class="exclusivo-hero">
+      <span class="hero-badge">Políticas de Publicación y Almacenamiento</span>
+      <h2>Separación de Custodia: Git vs. Hugging Face</h2>
+      <p>
+        Para garantizar la máxima velocidad en operaciones de control de versiones, evitar bloat binario en GitHub y asegurar la reproducibilidad abierta con identificadores DOI y versionado de datos DVC/Parquet, el proyecto implementa una estricta segregación funcional entre el repositorio de código fuente (Git) y el repositorio de datos masivos (Hugging Face Datasets).
+      </p>
+    </div>
+
+    <!-- Comparativa de Bóvedas Exclusivas -->
+    <div class="split-grid">
+      
+      <!-- Bóveda Git -->
+      <div class="vault-card git-vault">
+        <div class="vault-header">
+          <div class="vault-title">
+            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24" style="color:var(--accent-blue)"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/></svg>
+            Repositorio Git (Exclusivo)
+          </div>
+          <span class="vault-pill pill-git">Código & Web</span>
+        </div>
+        <p class="vault-desc">
+          Contiene la propiedad intelectual del código fuente, arquitectura del modelo PyTorch, pipelines deterministas, scripts de auditoría, dashboards interactivos y documentación de handoff.
+        </p>
+        <ul class="vault-items">
+          <li class="vault-item">
+            <div class="item-info">
+              <div class="item-name">Scripts/</div>
+              <div class="item-sub">27 scripts canónicos, entrenamiento PyTorch, evaluación LOEO y paths dinámicos.</div>
+            </div>
+            <span class="item-badge">~210 KB</span>
+          </li>
+          <li class="vault-item">
+            <div class="item-info">
+              <div class="item-name">Experimental/</div>
+              <div class="item-sub">Suite de iteración rápida (Antioquia, Macro-Regiones) y visor simplificado index.html.</div>
+            </div>
+            <span class="item-badge">~25 KB</span>
+          </li>
+          <li class="vault-item">
+            <div class="item-info">
+              <div class="item-name">dashboard_tecnico/</div>
+              <div class="item-sub">Aplicación SPA independiente para visualización científica (Chart.js) lista para GitHub Pages.</div>
+            </div>
+            <span class="item-badge">~620 KB</span>
+          </li>
+          <li class="vault-item">
+            <div class="item-info">
+              <div class="item-name">Resultados/</div>
+              <div class="item-sub">Tablas consolidadas de métricas LOEO, predicciones test, importancias y curvas de pérdida.</div>
+            </div>
+            <span class="item-badge">~7.2 MB</span>
+          </li>
+          <li class="vault-item">
+            <div class="item-info">
+              <div class="item-name">HANDOFF.md & PLAN_DE_ACCION.md</div>
+              <div class="item-sub">Estado de verdad verificable del proyecto y hoja de ruta metodológica de las 6 fases.</div>
+            </div>
+            <span class="item-badge">~65 KB</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Bóveda Hugging Face -->
+      <div class="vault-card hf-vault">
+        <div class="vault-header">
+          <div class="vault-title">
+            <span style="font-size:20px;">🤗</span>
+            Hugging Face Datasets (Exclusivo)
+          </div>
+          <span class="vault-pill pill-hf">Datasets & Binarios</span>
+        </div>
+        <p class="vault-desc">
+          Custodia los datasets crudos de gran volumen, tablas maestras consolidadas con 114+ columnas, series temporales de clima IDEAM/NASA POWER e índices de teleconexión NOAA ONI.
+        </p>
+        <ul class="vault-items">
+          <li class="vault-item">
+            <div class="item-info">
+              <div class="item-name">Dataset/raw/</div>
+              <div class="item-sub">Archivos Excel originales MADR EVA 2007-2018 (20 MB), UPRA 2019-2024 (28 MB) y Socrata dump.</div>
+            </div>
+            <span class="item-badge">~81.2 MB</span>
+          </li>
+          <li class="vault-item">
+            <div class="item-info">
+              <div class="item-name">Dataset/clean/dataset_maestro_andina_caribe.csv</div>
+              <div class="item-sub">Dataset macro-regional con 29,622 filas, 115 columnas y 0 NaNs en predictores.</div>
+            </div>
+            <span class="item-badge">~20.9 MB</span>
+          </li>
+          <li class="vault-item">
+            <div class="item-info">
+              <div class="item-name">Dataset/clean/dataset_maestro_entrenamiento.csv</div>
+              <div class="item-sub">Dataset maestro canónico Región Andina (Huila, Antioquia, Tolima, N = 18,425).</div>
+            </div>
+            <span class="item-badge">~12.9 MB</span>
+          </li>
+          <li class="vault-item">
+            <div class="item-info">
+              <div class="item-name">Dataset/clean/clima_mensual_municipios_2007_2024.csv</div>
+              <div class="item-sub">Matriz mensual hibridada de precipitación y temperatura (44,928 registros).</div>
+            </div>
+            <span class="item-badge">~3.1 MB</span>
+          </li>
+          <li class="vault-item">
+            <div class="item-info">
+              <div class="item-name">Dataset/clean/clima_anual_*.csv & oni_*.csv</div>
+              <div class="item-sub">Series anuales con rezagos temporales, anomalías z-score y rasgos fenológicos de El Niño.</div>
+            </div>
+            <span class="item-badge">~1.8 MB</span>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- Guía de Hidratación Rápida -->
+    <div class="guide-box">
+      <h3>Instrucciones para Hidratar el Proyecto desde Cero</h3>
+      <p style="font-size: 13px; color: var(--text-muted); margin-bottom: 12px;">
+        Para reproducir el proyecto en una máquina limpia, solo se clona el código de Git y se hidrata la carpeta <code>Dataset/</code> ejecutando el script automático de Hugging Face:
+      </p>
+      <pre class="code-block">
+# 1. Clonar el repositorio Git (código ligero y dashboard)
+git clone https://github.com/semillero-agroenso/modelo-predictivo.git
+cd modelo-predictivo
+
+# 2. Instalar dependencias exactas
+pip install -r requirements.txt
+
+# 3. Hidratar los datos pesados desde Hugging Face Datasets
+python Scripts/preparar_huggingface.py --descargar
+
+# 4. Verificar integridad y cero NaNs
+python Scripts/auditoria_puntos_2_3_4.py
+
+# 5. Ejecutar suite experimental o abrir el dashboard
+python Experimental/ejecutar_experimentos.py
+      </pre>
+    </div>
+
+  </main>
+
+</body>
+</html>

@@ -1,0 +1,95 @@
+ruta_relativa,rol,proposito,filas,columnas,tamano_bytes,tamano_kb,sha256,fecha_modificacion
+dashboard_tecnico/css/dashboard.css,Web/Dashboard,Componente de Dashboard Técnico (dashboard.css),,,9472,9.25,99b5146671fe953f17a482a011c981da5e4e24659a267c56ce2de35af658481c,2026-10-14 21:36:15
+dashboard_tecnico/data/dashboard_data.js,Web/Dashboard,Componente de Dashboard Técnico (dashboard_data.js),,,273139,266.74,b21b8061762c77f5c324181141ba2b9b3c8372ba6ec8812656c09b5746578752,2026-10-27 21:40:18
+dashboard_tecnico/data/dashboard_data_caribe.js,Web/Dashboard,Componente de Dashboard Técnico (dashboard_data_caribe.js),,,288464,281.7,a6fff0a109cb97f4aa1a43cf8c65f9cc6acc1c80f2c852a58bc7d973fd8aef69,2026-10-27 21:40:50
+dashboard_tecnico/exclusivo.html,Web/Dashboard,Componente de Dashboard Técnico (exclusivo.html),,,12626,12.33,2ebaa72789eb9bbf48b55f5669639104652fd09bd21402f92f3cd2d2b30cdace,2026-10-27 21:51:21
+dashboard_tecnico/index.html,Web/Dashboard,Componente de Dashboard Técnico (index.html),,,17146,16.74,304ecba05350d79a4652e6afb4b9b1cdfc237eccd05b7e85b981591dffc08087,2026-10-27 21:51:38
+dashboard_tecnico/js/dashboard.js,Web/Dashboard,Componente de Dashboard Técnico (dashboard.js),,,26956,26.32,7380717765839d25cb892ffb900e2a73e9b9ff4ebe835a7e9848e69769d3aa93,2026-10-20 18:10:12
+Dataset/clean/clima_anual_municipios_2007_2024.csv,Intermedio,Serie anual de clima municipal con anomalías y rezagos,3744,35,883362,862.66,02e23291a2d77b30ead16e450330931243a70017cdeb6620fc7091e5f5b055f1,2026-10-06 11:29:20
+Dataset/clean/clima_anual_municipios_2007_2024_caribe.csv,Otro,clima_anual_municipios_2007_2024_caribe.csv,3456,35,808328,789.38,0679f5512dfdec11e9b1f16a50eb705ecf3594c5fe868efcca263397d82836e5,2026-10-14 21:30:08
+Dataset/clean/clima_mensual_municipios_2007_2024.csv,Intermedio,Serie mensual de clima híbrido municipal (IDEAM + NASA POWER),44928,12,3201479,3126.44,ce639fba059b70604e8079d6704d311307c0af70f018a267808838cd1144f2ba,2026-10-06 11:29:20
+Dataset/clean/clima_mensual_municipios_2007_2024_caribe.csv,Otro,clima_mensual_municipios_2007_2024_caribe.csv,41472,12,2988750,2918.7,e964c1da3d955f2c0f9c918dbb814650b1df1f173ee2525142283bbf6c74c733,2026-10-14 21:30:07
+Dataset/clean/dataset_maestro_andina_caribe.csv,Otro,dataset_maestro_andina_caribe.csv,29622,115,21423420,20921.31,759d09c222e63c21a08dde401cd1a72cd46a5e3c57d765a764260e58f301e137,2026-10-20 17:54:25
+Dataset/clean/dataset_maestro_entrenamiento.csv,Final,"Dataset maestro para modelado (18,425 filas x 114 columnas)",18425,114,13176341,12867.52,827ed938cca8c7211aa24af9f910e4fdd6f83b0a56adb9ec61c05b1638a6495d,2026-10-06 17:15:37
+Dataset/clean/dataset_maestro_entrenamiento_caribe.csv,Otro,dataset_maestro_entrenamiento_caribe.csv,11197,114,8041984,7853.5,c5fe669c698a8b0e7479e37b8d20fb4ad55efa80d04569ac81d04ccce537a285,2026-10-14 21:30:40
+Dataset/clean/dataset_maestro_panel_balanceado.csv,Final,Subconjunto de entrenamiento para panel balanceado,13545,114,9680233,9453.35,d75f661f3874f2dc1d703f6fba666f0d8b2d5141910441ec30f897f39b319966,2026-10-06 17:15:41
+Dataset/clean/dataset_maestro_panel_balanceado_caribe.csv,Otro,dataset_maestro_panel_balanceado_caribe.csv,7141,114,5121591,5001.55,9ff3d10568f5bf23a183fb675aff7660720929447f928f53ba0e89ecc8a9c7e8,2026-10-14 21:30:41
+Dataset/clean/eva_2007_2024_caribe.csv,Otro,eva_2007_2024_caribe.csv,11197,20,1769706,1728.23,7aac31b844d0e368b91658bf2bd9bdb88c09a1ed57de547bd5d1af57fe20f3bc,2026-10-14 21:27:59
+Dataset/clean/eva_2007_2024_consolidado.csv,Intermedio,Dataset agrícola unificado 2007-2024 depurado (Fase 1),18591,15,2232673,2180.34,165807121ff8b3e964c06f741988e33621b9368e2d559b00eb779549101be8ee,2026-09-14 22:04:26
+Dataset/clean/eva_departamento_cultivo_anio.csv,Intermedio,Serie agregada depto-cultivo-año para rendimiento potencial,266,7,18860,18.42,c07e8229dd590ffc26915840528bae30dc641de8641a301ae14cf05b4d94f9d6,2026-09-14 22:04:26
+Dataset/clean/eva_departamento_cultivo_anio_caribe.csv,Otro,eva_departamento_cultivo_anio_caribe.csv,468,7,31886,31.14,91cd35b8754ac523949bb21bf30f40dfc1a51ba73653674ab6ce78bcf419383a,2026-10-14 21:27:59
+Dataset/clean/eva_departamento_tendencia_potencial.csv,Intermedio,Rendimiento potencial departamental suavizado (sin El Niño),266,9,22671,22.14,ed6aa7a252a1ea8a88b413c2c65921365028ad043116332348dacb3cdfd3f68a,2026-10-06 17:15:35
+Dataset/clean/eva_departamento_tendencia_potencial_caribe.csv,Otro,eva_departamento_tendencia_potencial_caribe.csv,468,9,38772,37.86,a99ad6bade044a35edc423df7a3b8c058d060adb0850db6584fdf4ee5230dc9e,2026-10-14 21:27:59
+Dataset/clean/eva_panel_balanceado.csv,Intermedio,Subconjunto de municipios con reporte continuo 18 años,13619,15,1629981,1591.78,89b15d033be5915ec227c8b3bc674aedde0b6acbc6e327ba9f009d7c72c2b53c,2026-09-14 22:04:26
+Dataset/clean/municipios_coordenadas_altitud.csv,Intermedio,Coordenadas DANE DIVIPOLA y altitud DEM de los 208 municipios,208,21,34248,33.45,a5e4c5ca53f5d4276e758e9e6f5689ffc42e804b16a1f2ccc0c2dccb89614465,2026-10-06 11:29:20
+Dataset/clean/municipios_coordenadas_altitud_caribe.csv,Otro,municipios_coordenadas_altitud_caribe.csv,192,24,32782,32.01,7af8176fa53bfad22c2d8466b6a130bb0a22914c740ff74ecd69535fda0f5d9f,2026-10-14 21:30:07
+Dataset/clean/municipios_panel_final.csv,Intermedio,Listado de los 191 municipios del panel balanceado,191,3,4875,4.76,80f9815986e021362f8dd571a22dd3a3096455465d177227783c8cd958290473,2026-09-14 22:04:26
+Dataset/clean/oni_anual_features.csv,Intermedio,Variables anuales y fenológicas del índice ONI (1950-2025),76,27,12120,11.84,1d0dbe334f0507e12abfaea1073198b61a88eb3876718074501a773bc80eea9e,2026-10-06 11:14:28
+Dataset/clean/perfil_agronomico_cultivos.csv,Intermedio,Metadatos ecofisiológicos de los 5 cultivos,5,17,890,0.87,a36ae5c6ef0288d9763265a68a5738f42752c75b5c8910af81a12bc16db6cf79,2026-10-06 11:29:44
+Dataset/clean/tabla_conteos_departamento_cultivo_anio.csv,Intermedio,Matriz de completitud de reporte anual por departamento,15,20,1244,1.21,b3740d8fb8576bb6600d29183c138162eed5dcc2d20858678c02dd1d96143083,2026-09-14 22:04:26
+Dataset/raw/Base Agrícola EVA 2007-2018_MADR.xlsx,Crudo,Histórico agrícola municipal 2007-2018 (AgroNet),,,19971181,19503.11,f8b96353bd8e4e7f64aa5789904b48483a26b66497b8b36079ead4cd3bc103f5,2026-08-29 19:58:09
+Dataset/raw/Base EVA 2019-2024.xlsx,Crudo,Histórico agrícola municipal 2019-2024 (UPRA / MADR),,,28998590,28318.94,aa87bdf0bd66939eb8ee2d4f1b33b8dfd7852072ae835470d3c0e802c175feb5,2026-08-29 19:58:30
+Dataset/raw/Evaluaciones_Agropecuarias_Municipales_–_EVA._2019_-_2025._Base_Agrícola_20260829.csv,Otro,Evaluaciones_Agropecuarias_Municipales_–_EVA._2019_-_2025._Base_Agrícola_20260829.csv,166732,18,33525510,32739.76,4115eb7896f42e01bc01be9f27a3b0cb9beb5d39b87c342e8fa627b2f49ee109,2026-08-29 20:02:34
+Dataset/raw/ideam_normales_climatologicas_estaciones.csv,Crudo,Normales Climatológicas Oficiales IDEAM (nsz2-kzcq),3889,24,610190,595.89,ac63b157c621c1fc35af642f0609f530439f231098b75d88f92a915131cce075,2026-10-06 11:28:57
+Dataset/raw/ideam_normales_climatologicas_estaciones_caribe.csv,Otro,ideam_normales_climatologicas_estaciones_caribe.csv,1833,24,290525,283.72,74f8663a4b134baec4fdf496c2bca76de81aab3f2ddf41fe2b6de49e61fa150e,2026-10-14 21:29:31
+Dataset/raw/oni_mensual_noaa.csv,Crudo,Serie histórica mensual ONI 1950-2026 (NOAA CPC),920,9,34794,33.98,af28f915c1eb61b2926f8237a60d3198f4ba4e0cf47968d468bab2bb9dc06f45,2026-10-06 11:14:28
+Dataset/README.md,Otro,README.md,,,4180,4.08,f29545b0508678caf30cbccc1af03fc2282290bbee7d9928d5adab99bfc08cb1,2026-10-27 21:52:49
+ESTADO_DEL_ARTE.md,Documento,"Revisión bibliográfica, antecedentes y análisis TimesFM 2.5",,,22743,22.21,13384fdf55435c1290624c4950f91301447fd17052ba54a99a886966dc0fd462,2026-09-14 22:21:53
+Experimental/datos_experimentales.json,Otro,datos_experimentales.json,,,7336,7.16,8d4cb226b66f8660e06eeb20d6c0b86c5164ae84e2a774a0d625613fdb4c03e2,2026-10-27 21:46:47
+Experimental/ejecutar_experimentos.py,Script,Script de procesamiento / modelado (ejecutar_experimentos.py),,,23844,23.29,0dac73bc408e5cb23de3c5adc5a29b4f194e3699a9cead03d7d9873efff03bd6,2026-10-27 21:44:34
+Experimental/index.html,Otro,index.html,,,15208,14.85,dcdf47ce007dbbb8ea08db0374131c4150f22d3f28bfe8d4e1bd50f1e6db77f5,2026-10-27 21:50:26
+Experimental/resultados_simplificados.csv,Otro,resultados_simplificados.csv,6,21,1639,1.6,b8ee747dba21069c9f5ca407f48d317a7ecad868b7091bc867abe51389f5c639,2026-10-27 21:46:47
+HANDOFF.md,Documento,Documento de transferencia y estado de verdad del proyecto,,,29299,28.61,89c17b0282bb31c862048a83876f4feb93b78b6a4bdadc4e36b59e79bd950ba4,2026-10-09 21:41:12
+landing/assets/eva-data.js,Web/Landing,Componente de landing Tempero (eva-data.js),,,4194,4.1,a54db3fb88541cac92c437131f239645c02ff716d29f41c95db487fedd274999,2026-10-06 10:42:53
+landing/build_data.py,Script,Script de procesamiento / modelado (build_data.py),,,3115,3.04,5b35a31a4d4c773101cb4114ccefc34188a8bd4e9cb3b4292d27b02074f9f439,2026-10-06 10:42:50
+landing/index.html,Web/Landing,Componente de landing Tempero (index.html),,,30009,29.31,53df72a8c7d5bcd3d337d0db83a633b81ebbe5d62eff63d606e79a27fc0fe47d,2026-10-06 10:52:31
+landing/main.js,Web/Landing,Componente de landing Tempero (main.js),,,16080,15.7,c17f38d1759f45c9c653458bc542401cdc610625beb21ff79292a41bcc76ee8e,2026-10-06 10:50:34
+landing/styles.css,Web/Landing,Componente de landing Tempero (styles.css),,,33984,33.19,6d78244b6061c5f9d6675929eebc62c5305bbf6d1dc7d5cb3fb34b962d2199cf,2026-10-06 10:53:28
+PLAN_DE_ACCION.md,Documento,Plan metodológico y hoja de ruta consolidada de las 6 fases,,,17227,16.82,210aed04b04e4a3783656f65febacc62168aa3605566fbb6897e42763c1846a2,2026-10-06 17:15:15
+README.md,Otro,README.md,,,6817,6.66,59c68f0e549362bbc0e9dbc0a1461b8512c928395da9e17e063f253ce332e139,2026-10-27 21:53:24
+requirements.txt,Otro,requirements.txt,,,441,0.43,248a3c65d6e6a033971d1302e213b4770c48f9e0867feed87a08c89e69770e19,2026-10-27 21:49:28
+Resultados/baselines_curvas_aprendizaje.csv,Final,Curvas de convergencia por iteración en XGBoost,44,3,928,0.91,391ea37117606433b154b8722dc92c5727f893c04bd970728ab1b75f92796406,2026-10-08 12:28:00
+Resultados/baselines_curvas_aprendizaje_caribe.csv,Otro,baselines_curvas_aprendizaje_caribe.csv,44,3,929,0.91,6a454419fd87cbf318a9a9f3f94c166b9fd1d8cd68f61590ce27d5acf91e45da,2026-10-14 21:34:48
+Resultados/baselines_feature_importances.csv,Final,Importancias de características de Random Forest y XGBoost,182,3,6920,6.76,ff2dfc84216afb711c1a04c50173e6e91755b889f4973fd88a92867a4732a1a1,2026-10-08 12:28:00
+Resultados/baselines_feature_importances_caribe.csv,Otro,baselines_feature_importances_caribe.csv,190,3,7254,7.08,ba47fd6ed60183a9b255d05de1228dff2f6268a93a683e35065076499cdf0e98,2026-10-14 21:34:48
+Resultados/baselines_predicciones_andina_caribe.csv,Otro,baselines_predicciones_andina_caribe.csv,12359,12,1355128,1323.37,a1644266180d280c4e1d90a0fd4a1a954d8e7a1160a676484e35f653df5545cd,2026-10-20 17:54:39
+Resultados/baselines_predicciones_caribe.csv,Otro,baselines_predicciones_caribe.csv,16000,15,2014612,1967.39,7a6a153c9e4a51381243d77cb0ecb060f986523c627c0b1a534d5f2f5e06c53f,2026-10-14 21:34:48
+Resultados/baselines_predicciones_test.csv,Final,Predicciones individuales en test con residuos y metadata,33436,15,4101343,4005.22,30df4687fef8dc10a122c1d126bc92889f72fcf398672a31f7238f1691a50a50,2026-10-08 12:28:00
+Resultados/baselines_resultados_caribe.csv,Otro,baselines_resultados_caribe.csv,24,16,4323,4.22,34ec5baccd780b577c6e5d18b971fde4f7d117625ac1b82144b9e17867c6aba9,2026-10-14 21:34:47
+Resultados/baselines_resultados_completos.csv,Final,Métricas de evaluación de baselines (LOEO y ablación ENSO),24,15,4087,3.99,a8e002b4809dd31d1bb228b1b7ed665eb68f5e42982290f3b77fc91e5aca7992,2026-10-08 12:27:59
+Resultados/baselines_xgboost_andina_caribe.csv,Otro,baselines_xgboost_andina_caribe.csv,18,18,3918,3.83,8b6e7f71a71a20931ab0404e857ea3621d2192614df003b061475657afea1d2d,2026-10-20 17:54:39
+Resultados/red_modular_comparativa_loeo.csv,Otro,red_modular_comparativa_loeo.csv,8,11,843,0.82,1d57430deb1b512d543a7820fa56cfee324c5d2c0d5b7ab26ea52d0d1b5df723,2026-10-20 18:07:20
+Resultados/red_modular_curvas_entrenamiento.csv,Otro,red_modular_curvas_entrenamiento.csv,40,5,1831,1.79,1b2bd22ec9801470d4b74339b4942fa9aa4c66f35d864f0ae9dc7d848028bf46,2026-10-20 18:07:20
+Resultados/red_modular_predicciones_andina.csv,Otro,red_modular_predicciones_andina.csv,16718,16,2468283,2410.43,339bb6ab67e021d984b8a4d2521991a4b852ce94c8a79e6b684e68ced8ef03af,2026-10-20 18:02:32
+Resultados/red_modular_predicciones_caribe.csv,Otro,red_modular_predicciones_caribe.csv,8000,16,1201394,1173.24,199b193a102fa935dedd6d3ea408152a7391c6fc31f05af1a7e9f28b64751a03,2026-10-20 18:07:20
+Resultados/red_modular_resultados_andina.csv,Otro,red_modular_resultados_andina.csv,12,22,2865,2.8,29b48313d169c333954a554c70d6e94fa148cef699ce9e96f0db23363441141e,2026-10-20 18:02:31
+Resultados/red_modular_resultados_caribe.csv,Otro,red_modular_resultados_caribe.csv,12,22,2866,2.8,3def958f67595c7c32615707feece248db5c6b0dc1d0386c69b32d978f10fbe9,2026-10-20 18:07:20
+Scripts/auditoria_puntos_2_3_4.py,Script,Script de procesamiento / modelado (auditoria_puntos_2_3_4.py),,,11539,11.27,dfa97a9f7bd49d5dc25da6e60f619c73622b1bd75f7d40ef1ef32cd43a53dfd8,2026-10-27 21:43:27
+Scripts/construir_dataset_maestro.py,Script,Script de procesamiento / modelado (construir_dataset_maestro.py),,,10894,10.64,461120bf0a90c10871b7ed7603fbecdf9760001d39466a17c7ff2d609c30463d,2026-10-06 17:13:48
+Scripts/construir_dataset_maestro_caribe.py,Script,Script de procesamiento / modelado (construir_dataset_maestro_caribe.py),,,7375,7.2,2d63e0944a4ccfac7e8cf8d0ce18c644ca7fbd6b2c4066b5878b5d8ba75647d4,2026-10-14 21:30:32
+Scripts/correccion_maiz.py,Script,Script de procesamiento / modelado (correccion_maiz.py),,,15297,14.94,096f27f68727e1e74286a9a5df5397cc69582ca8b0f27c55541afa2688b97759,2026-08-30 22:05:58
+Scripts/descarga_oni_noaa.py,Script,Script de procesamiento / modelado (descarga_oni_noaa.py),,,8201,8.01,255710e64a2dda5e146fe331ec34faf0ee6481179372ae3f8ac8e7b73fb52785,2026-10-06 11:14:10
+Scripts/diag.py,Script,Script de procesamiento / modelado (diag.py),,,2436,2.38,79424af1a6a2e3a072d9cd449b06b02715ebedfde9fdb5aec109bbecad106194,2026-08-29 20:39:38
+Scripts/diag_cafe_detalle2.py,Script,Script de procesamiento / modelado (diag_cafe_detalle2.py),,,4818,4.71,6cc83dd75094fc78ac7818d57b7717d10a3e70e318e5c54b0afb3f2b7aa4b189,2026-08-30 22:04:06
+Scripts/diag_cafe_unidad.py,Script,Script de procesamiento / modelado (diag_cafe_unidad.py),,,5877,5.74,5632d2a61b5e366380a57a9c439d877c2f5c806fdde756aaab33d13df9a2ee7d,2026-08-30 22:02:54
+Scripts/evaluar_baselines_caribe.py,Script,Script de procesamiento / modelado (evaluar_baselines_caribe.py),,,15605,15.24,175d2e62b5fcbb48e678f239d7fa9184e1ea21354e975de6c44e6b4917672658,2026-10-27 21:41:51
+Scripts/evaluar_baselines_fase4.py,Script,Script de procesamiento / modelado (evaluar_baselines_fase4.py),,,16830,16.44,9e194abd55d2e60183eee7801a35d4844296cd5873b0e90fa3b3709f23d846ca,2026-10-27 21:41:13
+Scripts/evaluar_xgboost_andina_caribe.py,Script,Script de procesamiento / modelado (evaluar_xgboost_andina_caribe.py),,,11854,11.58,7ea92ab88a4478dfe01ec8720897c80c3d37469da8f238ca907f52bc0ed1020d,2026-10-27 21:42:29
+Scripts/exportar_metricas_caribe.py,Script,Script de procesamiento / modelado (exportar_metricas_caribe.py),,,8502,8.3,2917bdca7226297a37ddbd4392dcaf7bcf1c189b48beb2cc9fa77f98dba4539d,2026-10-27 21:40:44
+Scripts/exportar_metricas_dashboard.py,Script,Script de procesamiento / modelado (exportar_metricas_dashboard.py),,,8481,8.28,ed40badcff01a23410ac171c5c35cf085c659995e9716604512812a407bdba71,2026-10-27 21:40:11
+Scripts/fix_parsing_cafe.py,Script,Script de procesamiento / modelado (fix_parsing_cafe.py),,,5562,5.43,034bc4f654dbf1774c65e8247c75030ba1d5d1d1a95647dcbb43846660bed093,2026-08-30 22:04:53
+Scripts/generar_inventario.py,Script,Script de procesamiento / modelado (generar_inventario.py),,,6323,6.17,bfbec90eafbc3b5ad6a94a2aa5cbebf2c6900462accea13ef8d1a2627475d110,2026-10-09 21:38:17
+Scripts/obtencion_clima.py,Script,Script de procesamiento / modelado (obtencion_clima.py),,,23998,23.44,7b3f8488e598954e3278eb3241f975d871774ca3b585f1944aaf742cc8001bd0,2026-10-06 11:28:37
+Scripts/obtencion_clima_caribe.py,Script,Script de procesamiento / modelado (obtencion_clima_caribe.py),,,22776,22.24,d69701fa9b33f7c78005be6c5aa8bbeecd119496f65602f2480793d4e7203f2b,2026-10-14 21:29:15
+Scripts/paso1_inspeccion.py,Script,Script de procesamiento / modelado (paso1_inspeccion.py),,,884,0.86,b41d5d21589a5ecfb3db345044b2c518101af321fa808b844e42a37c4cb42d94,2026-08-29 20:26:42
+Scripts/paso1b_inspeccion.py,Script,Script de procesamiento / modelado (paso1b_inspeccion.py),,,816,0.8,f1616eeec96edacfc4485c06385a95fba26edd9c88b0d378923882e136b0ef38,2026-08-29 20:26:52
+Scripts/paso3_explora.py,Script,Script de procesamiento / modelado (paso3_explora.py),,,2484,2.43,d089168cd3093e6dd82833d9a0cfb06d15bff4b35c48cf1eafc94edb4fa41c42,2026-08-29 20:27:11
+Scripts/paso3b_explora.py,Script,Script de procesamiento / modelado (paso3b_explora.py),,,1378,1.35,d6c3902d56ef805476f1f9a939c5eb9dd34f86bf1af9108dde443bcc97aaf0f5,2026-08-29 20:27:46
+Scripts/paths.py,Script,Script de procesamiento / modelado (paths.py),,,2072,2.02,5c0cac990868969c93d7eaf33d8be0842170e786125a3096098d788f5e5d2d83,2026-10-27 21:39:53
+Scripts/pipeline_canonico.py,Script,Script de procesamiento / modelado (pipeline_canonico.py),,,14295,13.96,7916572edca94b18110c0dec4acc379571994a979ac1e06248cfb5797e8680a0,2026-08-30 22:12:11
+Scripts/pipeline_eva.py,Script,Script de procesamiento / modelado (pipeline_eva.py),,,7047,6.88,ef3cb06e276e1ffd08654d8b8c03beee1a492ac0ba3aa74b86fb9fd2f3dac01f,2026-08-29 20:29:38
+Scripts/pipeline_eva_caribe.py,Script,Script de procesamiento / modelado (pipeline_eva_caribe.py),,,11826,11.55,d44c5b97078a616eb73797e2e97d1e26e2dfd4538ac005b5a0a073249e0bd5ab,2026-10-14 21:27:02
+Scripts/preparar_huggingface.py,Script,Script de procesamiento / modelado (preparar_huggingface.py),,,9162,8.95,bf4eb8cbc9577b404fa58a7164ebec511881d4b526719cc837659a021f83c40d,2026-10-27 21:52:41
+Scripts/prototipo_red_modular_fase5.py,Script,Script de procesamiento / modelado (prototipo_red_modular_fase5.py),,,21349,20.85,eed7767c90b79ee874aeff9c74cb39a3a8237df8b405ace989af53e3afea653d,2026-10-27 21:43:02
+Scripts/tareas_1_4.py,Script,Script de procesamiento / modelado (tareas_1_4.py),,,6704,6.55,538c118b56e558533ccd43cc4badb235f460429ffa86ee5e06efd7276bdc69ce,2026-08-29 20:41:26
+Scripts/validacion_ideam_vs_nasa_power.py,Script,Script de procesamiento / modelado (validacion_ideam_vs_nasa_power.py),,,16715,16.32,3303f27218ed94d27026c716c37266e8cb57958cba16cfa4d1c8e891ba49b217,2026-10-06 17:01:35

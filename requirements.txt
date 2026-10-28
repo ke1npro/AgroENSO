@@ -1,0 +1,20 @@
+# Dependencias del Proyecto Semillero de Investigación Agroclimatológica
+# Python >= 3.11, <= 3.13
+
+# Deep Learning y Tensores
+torch>=2.2.0
+
+# Modelos Clásicos y Gradient Boosting
+xgboost>=2.0.0
+scikit-learn>=1.4.0
+
+# Manipulación de Datos y Archivos Tabulares
+pandas>=2.1.0
+numpy>=1.26.0
+openpyxl>=3.1.2
+
+# APIs REST y Descarga de Fuentes
+requests>=2.31.0
+
+# Integración y Publicación en Hugging Face Datasets
+huggingface_hub>=0.20.0

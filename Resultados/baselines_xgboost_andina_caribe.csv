@@ -1,0 +1,19 @@
+split,split_descripcion,configuracion_enso,modelo,ambito_evaluacion,N_test,tiempo_seg,tps_inferencia,RMSE_test,MAE_test,R2_test,Pearson_r_test,Bias_test,RMSE_test_raw,MAE_test_raw,RMSE_train,MAE_train,R2_train
+Split_1_LOEO_2015_2016,El Niño Severo 2015-2016 (LOEO Canónico),Sin_ENSO,XGBoost_Combinado,Global_Andina+Caribe,3533,2.12,415368.5,0.2567,0.1863,0.2217,0.4807,0.0149,0.2602,0.1871,0.2437,0.1766,0.4204
+Split_1_LOEO_2015_2016,El Niño Severo 2015-2016 (LOEO Canónico),Sin_ENSO,XGBoost_Combinado,Subconjunto_Andina,2070,2.12,415368.5,0.2347,0.1689,0.2759,0.5397,0.0196,0.2355,0.1692,0.2437,0.1766,0.4204
+Split_1_LOEO_2015_2016,El Niño Severo 2015-2016 (LOEO Canónico),Sin_ENSO,XGBoost_Combinado,Subconjunto_Caribe,1463,2.12,415368.5,0.285,0.211,0.1533,0.3958,0.0084,0.2916,0.2124,0.2437,0.1766,0.4204
+Split_1_LOEO_2015_2016,El Niño Severo 2015-2016 (LOEO Canónico),Con_ENSO,XGBoost_Combinado,Global_Andina+Caribe,3533,2.23,503455.6,0.2866,0.2168,0.0302,0.337,0.0719,0.2894,0.2176,0.2407,0.1751,0.4347
+Split_1_LOEO_2015_2016,El Niño Severo 2015-2016 (LOEO Canónico),Con_ENSO,XGBoost_Combinado,Subconjunto_Andina,2070,2.23,503455.6,0.2624,0.1991,0.0948,0.4299,0.0802,0.2632,0.1994,0.2407,0.1751,0.4347
+Split_1_LOEO_2015_2016,El Niño Severo 2015-2016 (LOEO Canónico),Con_ENSO,XGBoost_Combinado,Subconjunto_Caribe,1463,2.23,503455.6,0.3176,0.2417,-0.0518,0.2181,0.0601,0.3229,0.2432,0.2407,0.1751,0.4347
+Split_2_LOEO_2023_2024,El Niño Reciente 2023-2024 (LOEO Reciente),Sin_ENSO,XGBoost_Combinado,Global_Andina+Caribe,2937,2.49,407345.2,0.328,0.2489,0.0982,0.3451,0.0468,0.3344,0.2507,0.2367,0.1703,0.4303
+Split_2_LOEO_2023_2024,El Niño Reciente 2023-2024 (LOEO Reciente),Sin_ENSO,XGBoost_Combinado,Subconjunto_Andina,2101,2.49,407345.2,0.3101,0.2305,0.1203,0.3593,0.0259,0.3145,0.2317,0.2367,0.1703,0.4303
+Split_2_LOEO_2023_2024,El Niño Reciente 2023-2024 (LOEO Reciente),Sin_ENSO,XGBoost_Combinado,Subconjunto_Caribe,836,2.49,407345.2,0.3692,0.2954,0.056,0.3543,0.0993,0.38,0.2986,0.2367,0.1703,0.4303
+Split_2_LOEO_2023_2024,El Niño Reciente 2023-2024 (LOEO Reciente),Con_ENSO,XGBoost_Combinado,Global_Andina+Caribe,2937,2.54,422583.9,0.3259,0.2459,0.11,0.3491,0.0372,0.3325,0.2477,0.2341,0.1688,0.4423
+Split_2_LOEO_2023_2024,El Niño Reciente 2023-2024 (LOEO Reciente),Con_ENSO,XGBoost_Combinado,Subconjunto_Andina,2101,2.54,422583.9,0.3078,0.228,0.1336,0.3729,0.0225,0.3123,0.2292,0.2341,0.1688,0.4423
+Split_2_LOEO_2023_2024,El Niño Reciente 2023-2024 (LOEO Reciente),Con_ENSO,XGBoost_Combinado,Subconjunto_Caribe,836,2.54,422583.9,0.3674,0.2909,0.0649,0.3289,0.0742,0.3784,0.2941,0.2341,0.1688,0.4423
+Split_3_Secuencial_2021_2024,Cuatrienio Reciente 2021-2024 (Secuencial Puro),Sin_ENSO,XGBoost_Combinado,Global_Andina+Caribe,5889,1.92,596360.5,0.3539,0.2624,0.0041,0.2299,0.0254,0.3617,0.2644,0.2254,0.162,0.4602
+Split_3_Secuencial_2021_2024,Cuatrienio Reciente 2021-2024 (Secuencial Puro),Sin_ENSO,XGBoost_Combinado,Subconjunto_Andina,4188,1.92,596360.5,0.325,0.2373,0.0538,0.2717,0.0045,0.3304,0.2386,0.2254,0.162,0.4602
+Split_3_Secuencial_2021_2024,Cuatrienio Reciente 2021-2024 (Secuencial Puro),Sin_ENSO,XGBoost_Combinado,Subconjunto_Caribe,1701,1.92,596360.5,0.4165,0.3242,-0.0844,0.1615,0.0771,0.429,0.3278,0.2254,0.162,0.4602
+Split_3_Secuencial_2021_2024,Cuatrienio Reciente 2021-2024 (Secuencial Puro),Con_ENSO,XGBoost_Combinado,Global_Andina+Caribe,5889,2.22,543471.2,0.3622,0.2674,-0.0433,0.2052,0.0357,0.3698,0.2694,0.2233,0.1605,0.4702
+Split_3_Secuencial_2021_2024,Cuatrienio Reciente 2021-2024 (Secuencial Puro),Con_ENSO,XGBoost_Combinado,Subconjunto_Andina,4188,2.22,543471.2,0.3246,0.2373,0.0565,0.2689,0.0047,0.3298,0.2386,0.2233,0.1605,0.4702
+Split_3_Secuencial_2021_2024,Cuatrienio Reciente 2021-2024 (Secuencial Puro),Con_ENSO,XGBoost_Combinado,Subconjunto_Caribe,1701,2.22,543471.2,0.4414,0.3415,-0.2182,0.1321,0.1119,0.4536,0.3452,0.2233,0.1605,0.4702

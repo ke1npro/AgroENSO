@@ -1,0 +1,9 @@
+region,modelo,configuracion_enso,RMSE_test,MAE_test,R2_test,Pearson_r_test,RMSE_test_raw,MAE_test_raw,sigma_mc_media,PICP_95_pct
+Andina,RedModular_FiLM,Con_ENSO,0.2828,0.2026,0.1331,0.395,0.2853,0.2034,0.0698,91.19
+Andina,RedModular_FiLM,Sin_ENSO,0.2756,0.1964,0.179,0.4266,0.2782,0.1971,0.0568,91.365
+Andina,RedModular_Sigmoide,Con_ENSO,0.2848,0.2066,0.1216,0.3826,0.2874,0.2074,0.0711,91.65
+Andina,RedModular_Sigmoide,Sin_ENSO,0.2802,0.2,0.1508,0.3982,0.2826,0.2007,0.0608,91.77
+Caribe,RedModular_FiLM,Con_ENSO,0.3399,0.2525,0.025,0.281,0.3497,0.2548,0.0708,89.3
+Caribe,RedModular_FiLM,Sin_ENSO,0.3388,0.245,0.0332,0.2577,0.3492,0.2474,0.0712,91.135
+Caribe,RedModular_Sigmoide,Con_ENSO,0.3449,0.2593,-0.006,0.253,0.3545,0.2616,0.0736,90.37
+Caribe,RedModular_Sigmoide,Sin_ENSO,0.3363,0.2476,0.0495,0.2574,0.3466,0.2499,0.0704,91.615
