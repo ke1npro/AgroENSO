@@ -1,29 +1,29 @@
 # HANDOFF: Estado del Proyecto y Transferencia Tecnica
 
 ## 1. Resumen Ejecutivo
-El proyecto desarrolla un modelo computacional para predecir el impacto de la variabilidad climatica y el ciclo ENSO (El Niño-Oscilacion del Sur) sobre el rendimiento de cultivos en Colombia [VERIFICADO: PLAN_DE_ACCION.md]. Se han consolidado 18 anos de evaluaciones agropecuarias municipales (EVA 2007-2024, 18,425 registros validos), se construyo una serie climatica hibrida municipal calibrada con 3,889 registros de normales del IDEAM y reanalisis NASA POWER (2006-2024), y se integro la senal macroclimatica mensual ONI de NOAA [VERIFICADO: dataset_maestro_entrenamiento.csv]. Se implementaron y evaluaron cuatro baselines clasicos (Ridge, Huber, Random Forest y XGBoost) bajo tres esquemas temporales Leave-One-Event-Out (LOEO) y ablacion de la senal ENSO, y se construyo un visor tecnico web independiente [VERIFICADO: evaluar_baselines_fase4.py, dashboard_tecnico/index.html]. Lo que sigue es la definicion formal de hiperparametros de la Fase 4 con Keiner, la ejecucion del entrenamiento de la red neuronal modular con ablacion Sigmoide vs FiLM (Fase 5) y la redaccion del articulo cientifico en formato IMRaD (Fase 6) [PROPUESTA ACEPTADA].
+El proyecto desarrolla un modelo computacional para predecir el impacto de la variabilidad climatica y el ciclo ENSO (El Niño-Oscilacion del Sur) sobre el rendimiento de cultivos en Colombia [VERIFICADO: PLAN_DE_ACCION.md]. Se han consolidado 18 anos de evaluaciones agropecuarias municipales (EVA 2007-2024, 29,622 registros validos en 10 departamentos de la Region Andina y Caribe), se construyo una serie climatica hibrida municipal calibrada con normales del IDEAM y reanalisis NASA POWER (2006-2024), y se integro la senal macroclimatica mensual ONI de NOAA [VERIFICADO: dataset_maestro_andina_caribe.csv]. Se implementaron y evaluaron cuatro baselines clasicos (Ridge, Huber, Random Forest y XGBoost) y una Red Neuronal Modular de Doble Rama en PyTorch con modulacion contextual FiLM e incertidumbre con Monte Carlo Dropout [VERIFICADO: prototipo_red_modular_fase5.py, evaluar_baselines_fase4.py]. El repositorio ha sido reestructurado en carpetas maestras (`Dataset/`, `Scripts/`, `Resultados/`, `Experimental/`), con repositorio Git inicializado, suite experimental y mapa de custodia exclusivo entre Git y Hugging Face [VERIFICADO: git status, preparar_huggingface.py].
 
 ## 2. Identidad y Alcance
-* Titulo preliminar: Modelo Neuronal Modular de Prediccion de Impacto Agricola por Ciclo ENSO en la Region Andina Colombiana [ORIGEN POR CONFIRMAR].
+* Titulo preliminar: Modelo Neuronal Modular de Prediccion de Impacto Agricola por Ciclo ENSO en Colombia [ORIGEN POR CONFIRMAR].
 * Objetivo: Cuantificar y predecir la eficiencia de rendimiento agricola municipal condicionada por anomalias oceanicas globales e interacciones biofisicas locales [VERIFICADO: PLAN_DE_ACCION.md].
-* Cultivos (5 categorias): Cafe, Cacao, Frijol, Maiz tradicional y Maiz tecnificado (como categorias separadas) [VERIFICADO: dataset_maestro_entrenamiento.csv].
-* Departamentos (3): Huila, Antioquia y Tolima [VERIFICADO: dataset_maestro_entrenamiento.csv].
+* Cultivos (5 categorias): Cafe, Cacao, Frijol, Maiz tradicional y Maiz tecnificado (como categorias separadas) [VERIFICADO: dataset_maestro_andina_caribe.csv].
+* Departamentos (10): Huila, Antioquia, Tolima (Andina); Atlantico, Bolivar, Cesar, Cordoba, La Guajira, Magdalena, Sucre (Caribe) [VERIFICADO: dataset_maestro_andina_caribe.csv].
 * Cobertura temporal: 2007 a 2024 (18 anos agricolas continuos, mas 2006 para rezagos t-1 observados) [VERIFICADO: clima_anual_municipios_2007_2024.csv].
-* Unidad de analisis: Municipio-Cultivo-Ano [VERIFICADO: dataset_maestro_entrenamiento.csv].
+* Unidad de analisis: Municipio-Cultivo-Ano [VERIFICADO: dataset_maestro_andina_caribe.csv].
 * Audiencia: Semillero de investigacion y comunidad academica agroclimatica [VERIFICADO: ESTADO_DEL_ARTE.md].
 * Revista candidata: Ingenieria y Competitividad (Universidad del Valle) [ORIGEN POR CONFIRMAR, no decidida].
 
 ## 3. Estado por Fase del Plan de Accion
-Avance general: 17 de 22 entregables planificados completados y verificados (77.3% real, 17/22) [VERIFICADO: conteo directo].
+Avance general: 21 de 22 entregables planificados completados y verificados (95.5% real, 21/22) [VERIFICADO: conteo directo].
 
 | Fase | Entregables Planificados | Entregables Existentes Verificados | Estado | Evidencia |
 | :--- | :--- | :--- | :---: | :--- |
-| Fase 1: EVA | Limpieza esquema, resolucion bug parsing, colapso maiz, panel balanceado | eva_2007_2024_consolidado.csv, eva_panel_balanceado.csv, municipios_panel_final.csv, eva_departamento_cultivo_anio.csv | Completada (4/4) | [VERIFICADO: pipeline_canonico.py] |
-| Fase 2: Clima & ENSO | Serie ONI mensual/anual, series climaticas locales, normales IDEAM, indicadores calidad | oni_mensual_noaa.csv, oni_anual_features.csv, ideam_normales_climatologicas_estaciones.csv, clima_mensual_municipios_2007_2024.csv, clima_anual_municipios_2007_2024.csv | Completada (5/5) | [VERIFICADO: obtencion_clima.py, validacion_ideam_vs_nasa_power.py] |
-| Fase 3: Feature Engineering | Rendimiento potencial, tabla perfil agronomico, variables estres, dataset maestro | eva_departamento_tendencia_potencial.csv, perfil_agronomico_cultivos.csv, dataset_maestro_entrenamiento.csv, dataset_maestro_panel_balanceado.csv | Completada (4/4) | [VERIFICADO: construir_dataset_maestro.py] |
-| Fase 4: Baselines | Script LOEO baselines, benchmarking 4 modelos, ablacion ENSO, reporte tecnico HTML | evaluar_baselines_fase4.py, baselines_resultados_completos.csv, baselines_predicciones_test.csv, dashboard_tecnico/index.html | Completada (4/4) | [VERIFICADO: evaluar_baselines_fase4.py, dashboard_tecnico/] |
-| Fase 5: Red Neuronal | Arquitectura doble rama PyTorch, ablacion Sigmoide vs FiLM, MC Dropout | Ninguno implementado aun | Pendiente (0/3) | Por iniciar |
-| Fase 6: Criterios & Paper | Explorador escenarios, analisis correlacion error-estacion, manuscrito IMRaD | Analisis preliminar de error en dashboard; manuscrito pendiente | En curso (0/2) | Pendiente redaccion final |
+| Fase 1: EVA | Limpieza esquema, resolucion bug parsing, colapso maiz, panel balanceado | Dataset/clean/eva_2007_2024_consolidado.csv, Dataset/clean/eva_2007_2024_caribe.csv, eva_panel_balanceado.csv | Completada (4/4) | [VERIFICADO: pipeline_canonico.py, pipeline_eva_caribe.py] |
+| Fase 2: Clima & ENSO | Serie ONI mensual/anual, series climaticas locales, normales IDEAM, indicadores calidad | Dataset/raw/oni_mensual_noaa.csv, Dataset/clean/oni_anual_features.csv, clima_mensual_*.csv, clima_anual_*.csv | Completada (5/5) | [VERIFICADO: obtencion_clima.py, obtencion_clima_caribe.py] |
+| Fase 3: Feature Engineering | Rendimiento potencial, tabla perfil agronomico, variables estres, dataset maestro | Dataset/clean/dataset_maestro_entrenamiento.csv, dataset_maestro_entrenamiento_caribe.csv, dataset_maestro_andina_caribe.csv | Completada (4/4) | [VERIFICADO: construir_dataset_maestro.py, construir_dataset_maestro_caribe.py] |
+| Fase 4: Baselines | Script LOEO baselines, benchmarking 4 modelos, ablacion ENSO, reporte tecnico HTML | Scripts/evaluar_baselines_fase4.py, evaluar_baselines_caribe.py, evaluar_xgboost_andina_caribe.py, Resultados/baselines_*.csv | Completada (4/4) | [VERIFICADO: Scripts/evaluar_baselines_fase4.py, Resultados/] |
+| Fase 5: Red Neuronal | Arquitectura doble rama PyTorch, ablacion Sigmoide vs FiLM, MC Dropout | Scripts/prototipo_red_modular_fase5.py, Resultados/red_modular_*.csv, Experimental/ejecutar_experimentos.py | Completada (3/3) | [VERIFICADO: Scripts/prototipo_red_modular_fase5.py, Experimental/] |
+| Fase 6: Criterios & Paper | Explorador escenarios, analisis correlacion error-estacion, manuscrito IMRaD | dashboard_tecnico/ (index.html, exclusivo.html), Experimental/index.html; manuscrito pendiente | En curso (1/2) | [VERIFICADO: dashboard_tecnico/, Experimental/index.html] |
 
 ## 4. Inventario de Archivos Clave
 Generado automaticamente mediante `generar_inventario.py` el 2026-10-09 [VERIFICADO: inventario_archivos.csv]. Total catalogado en repositorio: 53 archivos.
@@ -124,6 +124,9 @@ Convenciones tecnicas:
 | Salida de red neuronal lineal o softplus | Eficiencia es acotada inferiormente en 0 pero puede superar 1.0; sigmoide satura en 1.0 | Salida Sigmoide en capa final de la red | [PROPUESTA ACEPTADA] | PLAN_DE_ACCION.md Sec. 5.2 |
 | Incertidumbre con Monte Carlo Dropout | Permite aproximacion bayesiana con una sola red liviana sin costo de entrenar N redes | Deep Ensembles (demanda mas computo) | [PROPUESTA ACEPTADA] | PLAN_DE_ACCION.md Sec. 5.3 |
 | Enfoque metodologico formal (Sampieri) | Cuantitativo, alcance correlacional con valor predictivo, diseno no experimental longitudinal | No explicitado en entregas previas | [ORIGEN POR CONFIRMAR] | ESTADO_DEL_ARTE.md Sec. 1 |
+| Segregacion de custodia Git vs Hugging Face | Evitar saturacion y bloat de binarios en Git; garantizar reproducibilidad con DOI y DVC en Hugging Face Datasets | Subir archivos de 50 MB directamente a Git o usar Git-LFS | [DECISIÓN DEL USUARIO] | dashboard_tecnico/exclusivo.html |
+| Reestructuracion en carpetas maestras | Modularizar proyecto en Dataset/raw, Dataset/clean, Scripts, Resultados y Experimental con paths dinamicos | Dejar scripts y datasets mezclados en la raiz del proyecto | [DECISIÓN DEL USUARIO] | Scripts/paths.py |
+| Creacion de suite Experimental y visor simplificado | Permitir iteraciones rapidas (ej. subconjuntos zonales, modelos ablacionados) sin sobrecargar los hallazgos principales | Modificar directamente los scripts de produccion para cada prueba | [DECISIÓN DEL USUARIO] | Experimental/index.html |
 
 ## 9. Hallazgos y Errores Corregidos
 1. Bug de parsing numerico en produccion de cafe: En datos 2019 de Datos Abiertos, cifras superiores a 999 utilizaban punto como separador de miles y coma decimal. El parser estandar convertia a `NaN`, aparentando una caida ficticia del 90% al 97% en la cosecha. Se resolvio con funcion `to_num_new` en `pipeline_canonico.py` recuperando la totalidad de la serie [VERIFICADO: pipeline_canonico.py].
