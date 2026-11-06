@@ -1,0 +1,7 @@
+id,Escenario,N_Registros,RMSE_LOEO,MAE_LOEO,R2_LOEO,Pearson_r,MAPE_pct,TPS
+EXP-TODOS-MACRO,TODOS los Datos (Macro-Regional 10 Departamentos),29622,0.3057,0.231,0.0732,0.3439,30.52,405695.5
+EXP-ANDINA-TOTAL,"Región Andina Completa (Antioquia, Huila, Tolima)",18425,0.2783,0.2059,0.1605,0.4229,27.13,415188.7
+EXP-CARIBE-TOTAL,Región Caribe Completa (7 Departamentos),11197,0.3263,0.2534,0.1026,0.374,32.47,284989.9
+EXP-CESAR-EXCLUSIVO,Departamento del Cesar Exclusivo,2479,0.3087,0.2445,-0.2155,0.223,29.79,81254.5
+EXP-SIERRA-NEVADA,"Sierra Nevada de Santa Marta (Café, Cacao, Granos de Altura)",759,0.3482,0.278,-0.1974,0.084,33.98,23621.0
+EXP-ANTIOQUIA-EXCLUSIVO,Antioquia Exclusivo (Línea Base Andina),9296,0.2995,0.2225,0.2433,0.5061,29.72,252645.2

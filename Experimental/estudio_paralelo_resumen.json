@@ -1,0 +1,236 @@
+[
+  {
+    "estudio": "TODOS los Datos (Macro-Regional 10 Departamentos)",
+    "N_total": 29622,
+    "RMSE_promedio_loeo": 0.3057,
+    "MAE_promedio_loeo": 0.231,
+    "R2_promedio_loeo": 0.0732,
+    "Pearson_promedio_loeo": 0.3439,
+    "MAPE_promedio_loeo": 30.52,
+    "TPS_promedio": 405695.5,
+    "detalle_splits": [
+      {
+        "N": 3533,
+        "RMSE": 0.2857,
+        "MAE": 0.2161,
+        "R2": 0.0358,
+        "Pearson_r": 0.3396,
+        "Bias": 0.0716,
+        "MAPE_pct": 28.8,
+        "split": "Split_1_LOEO_2015_2016",
+        "split_desc": "El Niño 2015-2016",
+        "N_train": 26089,
+        "TPS": 333767.9
+      },
+      {
+        "N": 2937,
+        "RMSE": 0.3258,
+        "MAE": 0.2459,
+        "R2": 0.1106,
+        "Pearson_r": 0.3482,
+        "Bias": 0.0354,
+        "MAPE_pct": 32.25,
+        "split": "Split_2_LOEO_2023_2024",
+        "split_desc": "El Niño 2023-2024",
+        "N_train": 26685,
+        "TPS": 477623.1
+      }
+    ],
+    "id": "EXP-TODOS-MACRO"
+  },
+  {
+    "estudio": "Región Andina Completa (Antioquia, Huila, Tolima)",
+    "N_total": 18425,
+    "RMSE_promedio_loeo": 0.2783,
+    "MAE_promedio_loeo": 0.2059,
+    "R2_promedio_loeo": 0.1605,
+    "Pearson_promedio_loeo": 0.4229,
+    "MAPE_promedio_loeo": 27.13,
+    "TPS_promedio": 415188.7,
+    "detalle_splits": [
+      {
+        "N": 2070,
+        "RMSE": 0.2469,
+        "MAE": 0.1837,
+        "R2": 0.1985,
+        "Pearson_r": 0.4808,
+        "Bias": 0.0489,
+        "MAPE_pct": 24.64,
+        "split": "Split_1_LOEO_2015_2016",
+        "split_desc": "El Niño 2015-2016",
+        "N_train": 16355,
+        "TPS": 320339.2
+      },
+      {
+        "N": 2101,
+        "RMSE": 0.3097,
+        "MAE": 0.2282,
+        "R2": 0.1224,
+        "Pearson_r": 0.3649,
+        "Bias": 0.0236,
+        "MAPE_pct": 29.62,
+        "split": "Split_2_LOEO_2023_2024",
+        "split_desc": "El Niño 2023-2024",
+        "N_train": 16324,
+        "TPS": 510038.1
+      }
+    ],
+    "id": "EXP-ANDINA-TOTAL"
+  },
+  {
+    "estudio": "Región Caribe Completa (7 Departamentos)",
+    "N_total": 11197,
+    "RMSE_promedio_loeo": 0.3263,
+    "MAE_promedio_loeo": 0.2534,
+    "R2_promedio_loeo": 0.1026,
+    "Pearson_promedio_loeo": 0.374,
+    "MAPE_promedio_loeo": 32.47,
+    "TPS_promedio": 284989.9,
+    "detalle_splits": [
+      {
+        "N": 1463,
+        "RMSE": 0.2967,
+        "MAE": 0.2217,
+        "R2": 0.082,
+        "Pearson_r": 0.3404,
+        "Bias": 0.0176,
+        "MAPE_pct": 26.84,
+        "split": "Split_1_LOEO_2015_2016",
+        "split_desc": "El Niño 2015-2016",
+        "N_train": 9734,
+        "TPS": 367587.9
+      },
+      {
+        "N": 836,
+        "RMSE": 0.3558,
+        "MAE": 0.2851,
+        "R2": 0.1231,
+        "Pearson_r": 0.4076,
+        "Bias": 0.0751,
+        "MAPE_pct": 38.1,
+        "split": "Split_2_LOEO_2023_2024",
+        "split_desc": "El Niño 2023-2024",
+        "N_train": 10361,
+        "TPS": 202391.9
+      }
+    ],
+    "id": "EXP-CARIBE-TOTAL"
+  },
+  {
+    "estudio": "Departamento del Cesar Exclusivo",
+    "N_total": 2479,
+    "RMSE_promedio_loeo": 0.3087,
+    "MAE_promedio_loeo": 0.2445,
+    "R2_promedio_loeo": -0.2155,
+    "Pearson_promedio_loeo": 0.223,
+    "MAPE_promedio_loeo": 29.79,
+    "TPS_promedio": 81254.5,
+    "detalle_splits": [
+      {
+        "N": 290,
+        "RMSE": 0.2801,
+        "MAE": 0.2216,
+        "R2": -0.2498,
+        "Pearson_r": 0.2167,
+        "Bias": 0.0542,
+        "MAPE_pct": 24.75,
+        "split": "Split_1_LOEO_2015_2016",
+        "split_desc": "El Niño 2015-2016",
+        "N_train": 2189,
+        "TPS": 82080.9
+      },
+      {
+        "N": 281,
+        "RMSE": 0.3374,
+        "MAE": 0.2673,
+        "R2": -0.1812,
+        "Pearson_r": 0.2293,
+        "Bias": 0.1071,
+        "MAPE_pct": 34.82,
+        "split": "Split_2_LOEO_2023_2024",
+        "split_desc": "El Niño 2023-2024",
+        "N_train": 2198,
+        "TPS": 80428.2
+      }
+    ],
+    "id": "EXP-CESAR-EXCLUSIVO"
+  },
+  {
+    "estudio": "Sierra Nevada de Santa Marta (Café, Cacao, Granos de Altura)",
+    "N_total": 759,
+    "RMSE_promedio_loeo": 0.3482,
+    "MAE_promedio_loeo": 0.278,
+    "R2_promedio_loeo": -0.1974,
+    "Pearson_promedio_loeo": 0.084,
+    "MAPE_promedio_loeo": 33.98,
+    "TPS_promedio": 23621.0,
+    "detalle_splits": [
+      {
+        "N": 92,
+        "RMSE": 0.3684,
+        "MAE": 0.2935,
+        "R2": -0.3853,
+        "Pearson_r": -0.0274,
+        "Bias": 0.0897,
+        "MAPE_pct": 40.42,
+        "split": "Split_1_LOEO_2015_2016",
+        "split_desc": "El Niño 2015-2016",
+        "N_train": 667,
+        "TPS": 27802.1
+      },
+      {
+        "N": 67,
+        "RMSE": 0.328,
+        "MAE": 0.2625,
+        "R2": -0.0096,
+        "Pearson_r": 0.1955,
+        "Bias": -0.037,
+        "MAPE_pct": 27.54,
+        "split": "Split_2_LOEO_2023_2024",
+        "split_desc": "El Niño 2023-2024",
+        "N_train": 692,
+        "TPS": 19440.0
+      }
+    ],
+    "id": "EXP-SIERRA-NEVADA"
+  },
+  {
+    "estudio": "Antioquia Exclusivo (Línea Base Andina)",
+    "N_total": 9296,
+    "RMSE_promedio_loeo": 0.2995,
+    "MAE_promedio_loeo": 0.2225,
+    "R2_promedio_loeo": 0.2433,
+    "Pearson_promedio_loeo": 0.5061,
+    "MAPE_promedio_loeo": 29.72,
+    "TPS_promedio": 252645.2,
+    "detalle_splits": [
+      {
+        "N": 1022,
+        "RMSE": 0.2579,
+        "MAE": 0.1956,
+        "R2": 0.3359,
+        "Pearson_r": 0.5973,
+        "Bias": 0.0449,
+        "MAPE_pct": 26.57,
+        "split": "Split_1_LOEO_2015_2016",
+        "split_desc": "El Niño 2015-2016",
+        "N_train": 8274,
+        "TPS": 285283.6
+      },
+      {
+        "N": 1099,
+        "RMSE": 0.3411,
+        "MAE": 0.2495,
+        "R2": 0.1508,
+        "Pearson_r": 0.4149,
+        "Bias": 0.0304,
+        "MAPE_pct": 32.87,
+        "split": "Split_2_LOEO_2023_2024",
+        "split_desc": "El Niño 2023-2024",
+        "N_train": 8197,
+        "TPS": 220006.8
+      }
+    ],
+    "id": "EXP-ANTIOQUIA-EXCLUSIVO"
+  }
+]
