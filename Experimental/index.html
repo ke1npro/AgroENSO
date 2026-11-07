@@ -400,7 +400,7 @@
             <td class="bold-white">Antioquia Exclusivo</td>
             <td>XGBoost Regressor</td>
             <td>El Niño 2015-2016</td>
-            <td class="mono">1,133</td>
+            <td class="mono">1,022</td>
             <td class="mono">0.2586</td>
             <td class="mono">0.1961</td>
             <td class="mono bold-white">0.3324</td>
@@ -413,7 +413,7 @@
             <td class="bold-white">Antioquia Exclusivo</td>
             <td>XGBoost Regressor</td>
             <td>El Niño 2023-2024</td>
-            <td class="mono">1,215</td>
+            <td class="mono">1,099</td>
             <td class="mono">0.3419</td>
             <td class="mono">0.2505</td>
             <td class="mono">0.1473</td>
@@ -426,7 +426,7 @@
             <td class="bold-white">TODAS las Regiones</td>
             <td>XGBoost Regressor</td>
             <td>El Niño 2015-2016</td>
-            <td class="mono">3,478</td>
+            <td class="mono">3,533</td>
             <td class="mono">0.2866</td>
             <td class="mono">0.2168</td>
             <td class="mono">0.0302</td>
@@ -439,7 +439,7 @@
             <td class="bold-white">TODAS las Regiones</td>
             <td>XGBoost Regressor</td>
             <td>El Niño 2023-2024</td>
-            <td class="mono">3,892</td>
+            <td class="mono">2,937</td>
             <td class="mono">0.3259</td>
             <td class="mono">0.2459</td>
             <td class="mono">0.1100</td>
@@ -452,7 +452,7 @@
             <td class="bold-white">TODAS las Regiones</td>
             <td>Red Modular FiLM</td>
             <td>El Niño 2015-2016</td>
-            <td class="mono">3,478</td>
+            <td class="mono">3,533</td>
             <td class="mono bold-white" style="color: var(--accent);">0.2737</td>
             <td class="mono bold-white" style="color: var(--accent);">0.1956</td>
             <td class="mono bold-white">0.1155</td>
@@ -465,7 +465,7 @@
             <td class="bold-white">TODAS las Regiones</td>
             <td>Red Modular FiLM</td>
             <td>El Niño 2023-2024</td>
-            <td class="mono">3,892</td>
+            <td class="mono">2,937</td>
             <td class="mono">0.3329</td>
             <td class="mono bold-white" style="color: var(--accent);">0.2474</td>
             <td class="mono">0.0710</td>
@@ -477,10 +477,193 @@
       </table>
     </div>
 
+    <!-- Sección 2: Escalamiento de Dimensiones -->
+    <h3 class="section-title">Ablación 1: Escalamiento de Dimensiones de la Red Modular (Features Base Fijas, N = 29,622)</h3>
+    <div class="table-container">
+      <table>
+        <thead>
+          <tr>
+            <th>Hidden Dim</th>
+            <th>Capas / Rama</th>
+            <th>Parámetros</th>
+            <th>RMSE Train</th>
+            <th>RMSE Test LOEO</th>
+            <th>MAE Test LOEO</th>
+            <th>R² Test LOEO</th>
+            <th>Pearson r</th>
+            <th>Tiempo CPU</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="mono">32</td>
+            <td class="mono">2</td>
+            <td class="mono">8,289</td>
+            <td class="mono">0.2956</td>
+            <td class="mono">0.3071</td>
+            <td class="mono">0.2241</td>
+            <td class="mono">0.0713</td>
+            <td class="mono">0.2878</td>
+            <td class="mono">78.9 s</td>
+          </tr>
+          <tr>
+            <td class="mono bold-white">64 (Base)</td>
+            <td class="mono">2</td>
+            <td class="mono">25,793</td>
+            <td class="mono">0.2920</td>
+            <td class="mono">0.3055</td>
+            <td class="mono">0.2232</td>
+            <td class="mono">0.0814</td>
+            <td class="mono">0.2915</td>
+            <td class="mono">81.8 s</td>
+          </tr>
+          <tr>
+            <td class="mono">128</td>
+            <td class="mono">2</td>
+            <td class="mono">88,449</td>
+            <td class="mono">0.2779</td>
+            <td class="mono">0.3040</td>
+            <td class="mono">0.2225</td>
+            <td class="mono">0.0898</td>
+            <td class="mono">0.3162</td>
+            <td class="mono">151.8 s</td>
+          </tr>
+          <tr>
+            <td class="mono">256</td>
+            <td class="mono">2</td>
+            <td class="mono">324,353</td>
+            <td class="mono">0.2911</td>
+            <td class="mono">0.3060</td>
+            <td class="mono">0.2235</td>
+            <td class="mono">0.0779</td>
+            <td class="mono">0.2906</td>
+            <td class="mono">355.2 s</td>
+          </tr>
+          <tr>
+            <td class="mono">256</td>
+            <td class="mono">4</td>
+            <td class="mono">589,569</td>
+            <td class="mono">0.2908</td>
+            <td class="mono">0.3039</td>
+            <td class="mono">0.2208</td>
+            <td class="mono">0.0915</td>
+            <td class="mono">0.3067</td>
+            <td class="mono">553.4 s</td>
+          </tr>
+          <tr>
+            <td class="mono">512</td>
+            <td class="mono">3</td>
+            <td class="mono">1,765,889</td>
+            <td class="mono">0.2834</td>
+            <td class="mono">0.3000</td>
+            <td class="mono">0.2201</td>
+            <td class="mono">0.1153</td>
+            <td class="mono">0.3324</td>
+            <td class="mono">430.5 s</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Sección 3: Mejoras Estructurales Libres de Fuga -->
+    <h3 class="section-title">Ablación 2: Mejoras Causales Libres de Fuga (Promedio LOEO 2015-2016 y 2023-2024)</h3>
+    <div class="table-container">
+      <table>
+        <thead>
+          <tr>
+            <th>ID Modelo</th>
+            <th>Ámbito</th>
+            <th>Arquitectura / Mejora Incorporada</th>
+            <th>Parámetros</th>
+            <th>RMSE LOEO</th>
+            <th>MAE LOEO</th>
+            <th>R² LOEO</th>
+            <th>Pearson r</th>
+            <th>PICP 95%</th>
+            <th>MAE Cultivo-Año</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="mono">M0</td>
+            <td>Macro (10 Dptos)</td>
+            <td>RedModularFiLM Base (hidden=64)</td>
+            <td class="mono">25,793</td>
+            <td class="mono">0.3055</td>
+            <td class="mono">0.2232</td>
+            <td class="mono">0.0814</td>
+            <td class="mono">0.2915</td>
+            <td class="mono">96.56%</td>
+            <td class="mono">0.0406</td>
+          </tr>
+          <tr>
+            <td class="mono">M1</td>
+            <td>Macro (10 Dptos)</td>
+            <td>+ Semestre de Cosecha Activo (A/B) e Interacciones Caribe</td>
+            <td class="mono">26,241</td>
+            <td class="mono">0.3032</td>
+            <td class="mono">0.2213</td>
+            <td class="mono">0.0954</td>
+            <td class="mono">0.3044</td>
+            <td class="mono">96.89%</td>
+            <td class="mono">0.0358</td>
+          </tr>
+          <tr>
+            <td class="mono">M2</td>
+            <td>Macro (10 Dptos)</td>
+            <td>+ Entity Embedding Municipal (cod_dane_mun → ℝ⁸)</td>
+            <td class="mono">57,161</td>
+            <td class="mono">0.2919</td>
+            <td class="mono">0.2117</td>
+            <td class="mono bold-white">0.1637</td>
+            <td class="mono">0.4008</td>
+            <td class="mono">96.87%</td>
+            <td class="mono">0.0376</td>
+          </tr>
+          <tr style="background: rgba(16, 185, 129, 0.08);">
+            <td class="mono bold-white">M3</td>
+            <td class="bold-white">Macro (10 Dptos)</td>
+            <td class="bold-white">RedModularFiLM Residual + Embedding + Prior Causal Estricto</td>
+            <td class="mono">57,353</td>
+            <td class="mono bold-white" style="color: var(--accent);">0.2775</td>
+            <td class="mono bold-white" style="color: var(--accent);">0.1991</td>
+            <td class="mono bold-white" style="color: var(--accent);">0.2395</td>
+            <td class="mono bold-white">0.4912</td>
+            <td class="mono">95.63%</td>
+            <td class="mono bold-white" style="color: var(--accent);">0.0406</td>
+          </tr>
+          <tr>
+            <td class="mono">XGB-M3</td>
+            <td>Macro (10 Dptos)</td>
+            <td>XGBoost Regressor con exactamente las mismas features M3</td>
+            <td class="mono">—</td>
+            <td class="mono">0.2949</td>
+            <td class="mono">0.2176</td>
+            <td class="mono">0.1370</td>
+            <td class="mono">0.4423</td>
+            <td class="mono">—</td>
+            <td class="mono">0.0621</td>
+          </tr>
+          <tr style="background: rgba(56, 189, 248, 0.08);">
+            <td class="mono bold-white">AND-M3</td>
+            <td class="bold-white">Andina (3 Dptos)</td>
+            <td class="bold-white">RedModularFiLM Residual + Prior Causal (N = 18,425)</td>
+            <td class="mono">54,857</td>
+            <td class="mono bold-white" style="color: var(--primary);">0.2569</td>
+            <td class="mono bold-white" style="color: var(--primary);">0.1835</td>
+            <td class="mono bold-white" style="color: var(--primary);">0.2872</td>
+            <td class="mono bold-white">0.5318</td>
+            <td class="mono">95.84%</td>
+            <td class="mono bold-white" style="color: var(--primary);">0.0310</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
     <!-- Banner Explicativo -->
     <div class="banner-note">
-      <strong>Hallazgo de la iteración rápida:</strong>
-      En el departamento de <em>Antioquia</em>, el baseline de árboles captura un <strong>R² de 0.2398</strong> debido a la consistencia microclimática de la cordillera. Sin embargo, al extender el análisis a <em>TODAS las regiones (10 departamentos)</em>, la Red Modular FiLM supera al Gradient Boosting macro-regional tanto en <strong>MAE (0.2215 vs 0.2314)</strong> como en <strong>MAPE (27.42% vs 30.57%)</strong>, demostrando que la modulación biológica de pesos atenúa eficazmente el desacoplamiento de las teleconexiones climáticas entre el interior andino y el litoral caribeño.
+      <strong>Conclusiones de ingeniería y ablación:</strong>
+      Multiplicar por <strong>68.5×</strong> el tamaño de la red neuronal (hasta 1.77M parámetros en <code>hidden=512</code>) apenas mejora el R² de 0.0814 a 0.1153 porque el cuello de botella no era capacidad de representación sino información omitida (35.2% de varianza estructural entre municipios y colisión semestral A/B). En cambio, mantener una red liviana (~57k parámetros) e incorporar alineación semestral, <em>Entity Embeddings</em> municipales y aprendizaje residual sobre un prior histórico estrictamente causal (<code>M3</code>) triplica el R² macro-regional hasta <strong>0.2395</strong> (<strong>0.2872</strong> en Región Andina) y supera con amplio margen a <code>XGBoost</code> incluso en igualdad de variables (<strong>R² 0.2395 vs 0.1370</strong>).
     </div>
   </div>
 </body>

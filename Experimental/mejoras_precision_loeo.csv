@@ -1,0 +1,17 @@
+modelo_id,descripcion,ambito,split,N_train,N_test,parametros,RMSE_test,MAE_test,R2_test,Pearson_r_test,Bias_test,MAPE_test_pct,PICP_95_pct,MAE_agregado_depto_cultivo,MAE_agregado_cultivo_anio
+M0_FiLM_Base,"RedModularFiLM Base (hidden=64, features actuales)",Macro_10_Dptos,Split_1_LOEO_2015_2016,26089,3533,25793,0.2719,0.1956,0.1268,0.3585,-0.012,24.4,97.48,0.1044,0.0225
+M1_Semestre_Caribe,+ Semestre de Cosecha Activo (A/B) e Interacciones Caribe,Macro_10_Dptos,Split_1_LOEO_2015_2016,26089,3533,26241,0.2691,0.1918,0.1445,0.384,-0.0122,24.11,97.74,0.1051,0.0272
+M2_Entity_Embedding,+ Entity Embedding Municipal (cod_dane_mun -> R^8),Macro_10_Dptos,Split_1_LOEO_2015_2016,26089,3533,57161,0.2523,0.1792,0.2485,0.5037,0.0066,22.42,97.65,0.1105,0.0283
+M3_FiLM_Residual_Causal,RedModularFiLM Residual + Embedding + Prior Causal Estricto,Macro_10_Dptos,Split_1_LOEO_2015_2016,26089,3533,57353,0.2535,0.1764,0.2408,0.492,0.0044,22.07,95.7,0.1127,0.0421
+XGB_M3_Enriquecido,XGBoost Regressor con Features Enriquecidas M3,Macro_10_Dptos,Split_1_LOEO_2015_2016,26089,3533,,0.277,0.2021,0.0941,0.4353,0.0602,26.29,,0.1391,0.0713
+M4_Ensamble_Hibrido,Ensamble 50% RedModularFiLM_M3 + 50% XGBoost_M3,Macro_10_Dptos,Split_1_LOEO_2015_2016,26089,3533,57353,0.2588,0.1845,0.2091,0.4794,0.0323,23.71,,0.1216,0.0548
+M0_FiLM_Base,"RedModularFiLM Base (hidden=64, features actuales)",Macro_10_Dptos,Split_2_LOEO_2023_2024,26685,2937,25793,0.3391,0.2508,0.0361,0.2245,-0.0401,30.4,95.64,0.0739,0.0586
+M1_Semestre_Caribe,+ Semestre de Cosecha Activo (A/B) e Interacciones Caribe,Macro_10_Dptos,Split_2_LOEO_2023_2024,26685,2937,26241,0.3373,0.2508,0.0464,0.2247,-0.0135,31.32,96.05,0.0648,0.0444
+M2_Entity_Embedding,+ Entity Embedding Municipal (cod_dane_mun -> R^8),Macro_10_Dptos,Split_2_LOEO_2023_2024,26685,2937,57161,0.3315,0.2443,0.0789,0.2978,-0.0228,30.34,96.08,0.0708,0.0468
+M3_FiLM_Residual_Causal,RedModularFiLM Residual + Embedding + Prior Causal Estricto,Macro_10_Dptos,Split_2_LOEO_2023_2024,26685,2937,57353,0.3015,0.2219,0.2383,0.4904,-0.0031,28.0,95.57,0.0672,0.0391
+XGB_M3_Enriquecido,XGBoost Regressor con Features Enriquecidas M3,Macro_10_Dptos,Split_2_LOEO_2023_2024,26685,2937,,0.3128,0.2331,0.1799,0.4492,0.0446,30.74,,0.0797,0.0528
+M4_Ensamble_Hibrido,Ensamble 50% RedModularFiLM_M3 + 50% XGBoost_M3,Macro_10_Dptos,Split_2_LOEO_2023_2024,26685,2937,57353,0.3044,0.2257,0.2234,0.4765,0.0208,29.19,,0.0706,0.0404
+ANDINA_M3_FiLM_Residual,RedModularFiLM Residual + Prior Causal (Andina 3 Dptos),Andina_3_Dptos,Split_1_LOEO_2015_2016,16355,2070,54857,0.22,0.1525,0.3636,0.6032,-0.0028,19.32,96.62,0.0517,0.0277
+ANDINA_XGB_M3,XGBoost Regressor con Features M3 (Andina 3 Dptos),Andina_3_Dptos,Split_1_LOEO_2015_2016,16355,2070,,0.2362,0.1688,0.2667,0.5347,0.0323,22.52,,0.0585,0.0352
+ANDINA_M3_FiLM_Residual,RedModularFiLM Residual + Prior Causal (Andina 3 Dptos),Andina_3_Dptos,Split_2_LOEO_2023_2024,16324,2101,54857,0.2937,0.2146,0.2108,0.4604,0.0022,27.31,95.05,0.0516,0.0343
+ANDINA_XGB_M3,XGBoost Regressor con Features M3 (Andina 3 Dptos),Andina_3_Dptos,Split_2_LOEO_2023_2024,16324,2101,,0.301,0.2209,0.171,0.434,0.0166,28.29,,0.0496,0.0353
